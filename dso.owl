@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#"
+     xml:base="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology">
+        <dct:description>This is an ontology describing the Design Systems for User Interfaces.</dct:description>
+        <dct:license>http://creativecommons.org/licenses/by/4.0/</dct:license>
+        <dct:title>Design System Ontology</dct:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasBorder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasBorder">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Element"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Border"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasBorderColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasBorderColor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Border"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasBorderWidth -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasBorderWidth">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Border"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasFill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasFill">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Element"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Fill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasFillColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasFillColor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#ColorFill"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasInnerShadow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasInnerShadow">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Element"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#InnerShadow"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasOutterShadow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasOutterShadow">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Element"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#OutterShadow"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasShadowBlur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasShadowBlur">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Shadow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasShadowColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasShadowColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Shadow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasShadowOffsetX -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasShadowOffsetX">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Shadow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasShadowOffsetY -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#hasShadowOffsetY">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Shadow"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#colorAlpha -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#colorAlpha">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#colorBlue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#colorBlue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#colorGreen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#colorGreen">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#colorRed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#colorRed">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#measureUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#measureUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#measureValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#measureValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Border -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Border">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Mixin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#BoxModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#BoxModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Mixin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#ColorFill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#ColorFill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Fill"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#GradientFill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Element"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Fill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Fill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Mixin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#GradientFill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#GradientFill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Fill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#InnerShadow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#InnerShadow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Shadow"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#OutterShadow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Mixin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Mixin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#OutterShadow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#OutterShadow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Shadow"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Primitive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Primitive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Shadow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Shadow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Mixin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#TextStyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#TextStyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Mixin"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Border"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#BoxModel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Fill"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Shadow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#TextStyle"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
