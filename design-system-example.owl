@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#"
+     xml:base="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:design-system-ontology="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example">
+        <owl:imports rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#BorderPrimary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#BorderPrimary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Border"/>
+        <design-system-ontology:hasBorderColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorPrimary"/>
+        <design-system-ontology:hasBorderWidth rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#BorderWidthDefault"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#BorderWidthDefault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#BorderWidthDefault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+        <design-system-ontology:measureUnit>px</design-system-ontology:measureUnit>
+        <design-system-ontology:measureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</design-system-ontology:measureValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ButtonPrimary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ButtonPrimary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Element"/>
+        <design-system-ontology:hasBorder rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#BorderPrimary"/>
+        <design-system-ontology:hasFill rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorFillLight"/>
+        <design-system-ontology:hasInnerShadow rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#InnerShadowDefault"/>
+        <design-system-ontology:hasOuterShadow rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#OuterShadowDefault"/>
+        <design-system-ontology:hasTextStyle rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TextStyleDefault"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorDark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorDark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+        <design-system-ontology:colorAlpha rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</design-system-ontology:colorAlpha>
+        <design-system-ontology:colorBlue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</design-system-ontology:colorBlue>
+        <design-system-ontology:colorGreen rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</design-system-ontology:colorGreen>
+        <design-system-ontology:colorRed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</design-system-ontology:colorRed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorFillLight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorFillLight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#ColorFill"/>
+        <design-system-ontology:hasFillColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorLight"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorLight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorLight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+        <design-system-ontology:colorAlpha rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</design-system-ontology:colorAlpha>
+        <design-system-ontology:colorBlue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</design-system-ontology:colorBlue>
+        <design-system-ontology:colorGreen rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</design-system-ontology:colorGreen>
+        <design-system-ontology:colorRed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</design-system-ontology:colorRed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorPrimary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorPrimary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+        <design-system-ontology:colorAlpha rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</design-system-ontology:colorAlpha>
+        <design-system-ontology:colorBlue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">255</design-system-ontology:colorBlue>
+        <design-system-ontology:colorGreen rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</design-system-ontology:colorGreen>
+        <design-system-ontology:colorRed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</design-system-ontology:colorRed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#FontSizeDefault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#FontSizeDefault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+        <design-system-ontology:measureUnit>px</design-system-ontology:measureUnit>
+        <design-system-ontology:measureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</design-system-ontology:measureValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#InnerShadowDefault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#InnerShadowDefault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#InnerShadow"/>
+        <design-system-ontology:hasShadowBlur rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowBlurDefault"/>
+        <design-system-ontology:hasShadowColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorDark"/>
+        <design-system-ontology:hasShadowOffsetX rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowXDefault"/>
+        <design-system-ontology:hasShadowOffsetY rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowYDefault"/>
+        <design-system-ontology:hasShadowSpread rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowSpreadDefault"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#OuterShadowDefault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#OuterShadowDefault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#OuterShadow"/>
+        <design-system-ontology:hasShadowBlur rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowBlurDefault"/>
+        <design-system-ontology:hasShadowColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorDark"/>
+        <design-system-ontology:hasShadowOffsetX rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowXDefault"/>
+        <design-system-ontology:hasShadowOffsetY rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowYDefault"/>
+        <design-system-ontology:hasShadowSpread rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowSpreadDefault"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowBlurDefault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowBlurDefault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+        <design-system-ontology:measureUnit>px</design-system-ontology:measureUnit>
+        <design-system-ontology:measureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</design-system-ontology:measureValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowSpreadDefault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowSpreadDefault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+        <design-system-ontology:measureUnit>px</design-system-ontology:measureUnit>
+        <design-system-ontology:measureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</design-system-ontology:measureValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowXDefault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowXDefault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+        <design-system-ontology:measureUnit>px</design-system-ontology:measureUnit>
+        <design-system-ontology:measureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</design-system-ontology:measureValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowYDefault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowYDefault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
+        <design-system-ontology:measureUnit>px</design-system-ontology:measureUnit>
+        <design-system-ontology:measureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</design-system-ontology:measureValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TextStyleDefault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TextStyleDefault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#TextStyle"/>
+        <design-system-ontology:hasTextStyleFontSize rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#FontSizeDefault"/>
+        <design-system-ontology:hasTextStyleColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorDark"/>
+        <design-system-ontology:textStyleFontFamily>Tahoma</design-system-ontology:textStyleFontFamily>
+        <design-system-ontology:textStyleFontWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</design-system-ontology:textStyleFontWeight>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

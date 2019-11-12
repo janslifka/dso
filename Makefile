@@ -6,3 +6,7 @@ docs.generate:
 
 docs.serve:
 	cd docs && python3 -m http.server
+
+
+open.evaluation:
+	open docs/OOPSevaluation/oopsEval.html
