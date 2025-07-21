@@ -50,10 +50,21 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ButtonPrimary">
         <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Element"/>
         <design-system-ontology:hasBorder rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#BorderPrimary"/>
-        <design-system-ontology:hasFill rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorFillLight"/>
-        <design-system-ontology:hasInnerShadow rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#InnerShadowDefault"/>
+        <design-system-ontology:hasFill rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorFillPrimary"/>
         <design-system-ontology:hasOuterShadow rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#OuterShadowDefault"/>
-        <design-system-ontology:hasTextStyle rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TextStyleDefault"/>
+        <design-system-ontology:hasTypography rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TypographyDefaultInversed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ButtonSecondary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ButtonSecondary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Element"/>
+        <design-system-ontology:hasBorder rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#BorderPrimary"/>
+        <design-system-ontology:hasFill rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorFillWhite"/>
+        <design-system-ontology:hasOuterShadow rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#OuterShadowDefault"/>
+        <design-system-ontology:hasTypography rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TypographyDefaultPrimary"/>
     </owl:NamedIndividual>
     
 
@@ -79,6 +90,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorFillPrimary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorFillPrimary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#ColorFill"/>
+        <design-system-ontology:hasFillColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorPrimary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorFillWhite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorFillWhite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#ColorFill"/>
+        <design-system-ontology:hasFillColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorWhite"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorLight -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorLight">
@@ -98,7 +127,19 @@
         <design-system-ontology:colorAlpha rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</design-system-ontology:colorAlpha>
         <design-system-ontology:colorBlue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">255</design-system-ontology:colorBlue>
         <design-system-ontology:colorGreen rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</design-system-ontology:colorGreen>
-        <design-system-ontology:colorRed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</design-system-ontology:colorRed>
+        <design-system-ontology:colorRed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">255</design-system-ontology:colorRed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorWhite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorWhite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Color"/>
+        <design-system-ontology:colorAlpha rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</design-system-ontology:colorAlpha>
+        <design-system-ontology:colorBlue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">255</design-system-ontology:colorBlue>
+        <design-system-ontology:colorGreen rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">255</design-system-ontology:colorGreen>
+        <design-system-ontology:colorRed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">255</design-system-ontology:colorRed>
     </owl:NamedIndividual>
     
 
@@ -144,7 +185,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowBlurDefault">
         <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
         <design-system-ontology:measureUnit>px</design-system-ontology:measureUnit>
-        <design-system-ontology:measureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</design-system-ontology:measureValue>
+        <design-system-ontology:measureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</design-system-ontology:measureValue>
     </owl:NamedIndividual>
     
 
@@ -154,7 +195,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ShadowSpreadDefault">
         <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Measure"/>
         <design-system-ontology:measureUnit>px</design-system-ontology:measureUnit>
-        <design-system-ontology:measureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</design-system-ontology:measureValue>
+        <design-system-ontology:measureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</design-system-ontology:measureValue>
     </owl:NamedIndividual>
     
 
@@ -179,14 +220,38 @@
     
 
 
-    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TextStyleDefault -->
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TypographyDefault -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TextStyleDefault">
-        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#TextStyle"/>
-        <design-system-ontology:hasTextStyleFontSize rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#FontSizeDefault"/>
-        <design-system-ontology:hasTextStyleColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorDark"/>
-        <design-system-ontology:textStyleFontFamily>Tahoma</design-system-ontology:textStyleFontFamily>
-        <design-system-ontology:textStyleFontWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</design-system-ontology:textStyleFontWeight>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TypographyDefault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Typography"/>
+        <design-system-ontology:hasTypographyColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorDark"/>
+        <design-system-ontology:hasTypographyFontSize rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#FontSizeDefault"/>
+        <design-system-ontology:typographyFontFamily>Tahoma</design-system-ontology:typographyFontFamily>
+        <design-system-ontology:typographyFontWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</design-system-ontology:typographyFontWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TypographyDefaultInversed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TypographyDefaultInversed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Typography"/>
+        <design-system-ontology:hasTypographyColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorWhite"/>
+        <design-system-ontology:hasTypographyFontSize rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#FontSizeDefault"/>
+        <design-system-ontology:typographyFontFamily>Tahoma</design-system-ontology:typographyFontFamily>
+        <design-system-ontology:typographyFontWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</design-system-ontology:typographyFontWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TypographyDefaultPrimary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#TypographyDefaultPrimary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/9/design-system-ontology#Typography"/>
+        <design-system-ontology:hasTypographyColor rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#ColorPrimary"/>
+        <design-system-ontology:hasTypographyFontSize rdf:resource="http://www.semanticweb.org/janslifka/ontologies/2019/10/design-system-example#FontSizeDefault"/>
+        <design-system-ontology:typographyFontFamily>Tahoma</design-system-ontology:typographyFontFamily>
+        <design-system-ontology:typographyFontWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</design-system-ontology:typographyFontWeight>
     </owl:NamedIndividual>
 </rdf:RDF>
 
