@@ -11,7 +11,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.org/janslifka/dso">
         <dct:description>This is an ontology describing the Design Systems for User Interfaces.</dct:description>
-        <dct:license>http://creativecommons.org/licenses/by/4.0/</dct:license>
+        <dct:license>http://www.apache.org/licenses/LICENSE-2.0</dct:license>
         <dct:title>Design System Ontology</dct:title>
         <dct:creator rdf:resource="https://orcid.org/0000-0002-4941-0575"/>
     </owl:Ontology>
