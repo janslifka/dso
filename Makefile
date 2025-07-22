@@ -10,3 +10,8 @@ docs.serve:
 
 open.evaluation:
 	open docs/OOPSevaluation/oopsEval.html
+
+.PHONY: web
+web:
+	mkdir -p web
+	pylode dso.owl -o web/index.html
